@@ -1,0 +1,89 @@
+body
+{
+	font-family: sans;
+}
+
+.masquable
+{
+	/* Par défaut bordure complète */
+	border: 1px solid #aaa;
+	/* Sert uniquement à créer un "containing élément" pour pouvoir placer le titre avec position: absolute  */
+	position: relative;
+	margin: 2em 0;
+}
+
+.masquable.ferme
+{
+	/* La boite ferme n'a que border-top (sinon trait épais) */
+	border: none;
+	border-top: 1px solid #aaa;
+}
+
+.masquable-titre
+{
+	/* Permet de placer le titre dans .masquable (qui est "containing bloc") */
+	position: absolute;
+	font-size: 14px;
+	/* coordonnées relatives au "containing bloc" */
+	top: -11px;
+	left: 20px;
+	/* On ne veut pas que le titre fasse toute la ligne */
+	display: inline-block;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: white;
+	cursor: pointer;
+	margin: 0;
+}
+
+/* Quand c'est ouvert les bordures font bouger légèrement le titre. Il faut compenser de 1px  */
+.masquable.ferme>.masquable-titre
+{
+	left: 21px;
+}
+
+
+/* La petite boite avec "+" ou "-" */
+.masquable-titre span
+{
+	margin-right: 1em;
+	border: 1px solid #aaa;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+}
+
+.masquable-titre:hover span
+{
+	background-color: #ffc;
+}
+
+
+.masquable-contenu
+{
+	padding: 1em;
+	overflow: hidden;
+}
+
+.masquable.ferme .masquable-contenu
+{
+	/* Quand c'est ferme , on cache le contenu. */
+	/* On ne peut pas se contenter de le faire dans le JS... */
+	/* car on veut pouvoir avoir des parties fermées dès l'affichage initial */
+	/* (qui se fait en HTML+CSS seuls) */
+	display: none;
+}
+
+
+/* Éviter que le contenu ne commence par de l'espace vide */
+.masquable-contenu>*:first-child
+{
+	margin-top: 0;
+}
+
+/* Éviter que le contenu ne finisse par de l'espace vide */
+.masquable-contenu>*:last-child
+{
+	margin-bottom: 0;
+}

@@ -1,0 +1,26 @@
+.deplacer
+{
+	display: inline-block;
+	position: absolute;
+
+	background-color: #6a3;
+	border: 1px solid black;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+	color: white;
+	padding: .5em;
+	/* La souris est une petite main */
+	cursor: grab;
+}
+
+.deplacer.en-mouvement
+{
+	background-color: #9c3;
+	/* La souris est une petite main active */
+	cursor: grabbing;
+}
+
+/* Position de départ de la 2e boite */
+.deplacer:nth-child(2)
+{
+	top: 100px;
+}

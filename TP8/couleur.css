@@ -1,0 +1,52 @@
+#couleur
+{
+	width: 380px;
+	font-family: sans;
+	border: 1px solid #aaa;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+	background-color: #fafafa;
+	padding: 10px;
+	padding-left: 20px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+#potentiometres
+{
+	list-style: none;
+	padding: 0;
+	margin-top: 0;
+}
+
+#couleur input
+{
+	text-align: right;
+	margin-right: .5em;
+}
+
+#potentiometres input
+{
+	width: 70px;
+}
+
+#boite-couleur
+{
+	display: inline-block;
+	width: 200px;
+	height: 30px;
+	border: 1px solid #aaa;
+	background-color: black;
+	vertical-align: middle;
+}
+
+#hex
+{
+	width: 70px;
+	font-family: mono;
+	margin-left: 1em;
+}
+
+#couleur input.erreur
+{
+	color: red;
+}

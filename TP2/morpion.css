@@ -1,0 +1,62 @@
+#morpion
+{
+	border-collapse: collapse;
+}
+
+#morpion td
+{
+	border: 1px solid black;
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#morpion td:hover
+{
+	background-color: #ffc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+table, td
+{
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+table
+{
+    width: 200px;
+    height: 200px;
+}
+
+td:hover
+{
+  background-color:  #ffffb3
+}
+
+.case-croix::after
+{
+  content: "X";
+  align-content: center;
+}
+*/

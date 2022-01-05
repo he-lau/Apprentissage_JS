@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>couleur</title>
+		<link type="text/css" rel="stylesheet" href="potentiometre.css"/>
+		<link type="text/css" rel="stylesheet" href="couleur.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="couleur.js"></script>
+	</head>
+	<body>
+<!--------------------->
+<div id="couleur">
+
+	<ul id="potentiometres">
+		<li>
+			<span class="potentiometre" id="pot-rouge">
+				<span></span>
+				<img src="poignee.png" alt=""/>
+			</span>
+			<input id="valeur-pot-rouge" class="valeur" type="text" value="0"/> rouge
+		</li>
+		<li>
+			<span class="potentiometre" id="pot-vert">
+				<span></span>
+				<img src="poignee.png" alt=""/>
+			</span>
+			<input id="valeur-pot-vert" class="valeur" type="text" value="0"/> vert
+		</li>
+		<li>
+			<span class="potentiometre" id="pot-bleu">
+				<span></span>
+				<img src="poignee.png" alt=""/>
+			</span>
+			<input id="valeur-pot-bleu" class="valeur" type="text" value="0"/> bleu
+		</li>
+	</ul>
+
+
+	<div id="ligne-bas">
+		<span id="boite-couleur"></span>
+		<input id="hex" type="text" value="#000000"/> hex
+	</div>
+
+</div>
+<!--------------------->
+	</body>
+</html>
